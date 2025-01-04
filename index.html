@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HatlinShop - Ваш надежный магазин</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            background-image: url('𝘽𝙖𝙣𝙣𝙚𝙧.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow-x: hidden;
+        }
+        header {
+            background-color: #0000FF; /* Синий фон */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: rgba(51, 51, 51, 0.9);
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            padding: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .section h2 {
+            color: #0000FF; /* Синий цвет текста "Наши товары" */
+        }
+        .products {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+        footer {
+            background-color: rgba(51, 51, 51, 0.9);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .button {
+            display: inline-block;
+            background-color: #0000FF; /* Синий фон кнопки */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 10px;
+            transition: all 0.3s ease;
+        }
+        .contact-button {
+            background-color: #0088cc;
+        }
+        .button:hover, .contact-button:hover {
+            background-color: #3333FF; /* Более насыщенный синий при наведении */
+            transform: scale(1.05);
+        }
+        .info-box {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: rgba(240, 248, 255, 0.9);
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            color: black;
+        }
+
+        /* Стили для падающего снега */
+        .snowflake {
+            position: fixed;
+            top: -10px;
+            z-index: 9999;
+            color: white;
+            font-size: 1.5em;
+            pointer-events: none;
+            animation: fall linear infinite;
+        }
+
+        @keyframes fall {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            100% {
+                transform: translateY(100vh) rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Добро пожаловать в HatlinShop</h1>
+    <p>Ваш надежный магазин для эксклюзивных товаров.</p>
+</header>
+
+<nav>
+    <a href="#products">Товары</a>
+    <a href="https://t.me/otzivihatlinshop" target="_blank">Отзывы</a>
+    <a href="#contact">Контакты</a>
+</nav>
+
+<div class="container">
+    <div id="products" class="section">
+        <h2>Наши товары</h2>
+        <div class="products">
+            <div class="card">
+                <h3>Garry's Mod</h3>
+                <p>Популярная игра с огромными возможностями. Цена: 375 рублей.</p>
+                <a href="https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118505105584&sum=375&label=garrysmod&quickpay-form=shop&targets=Оплата%20за%20игру%20Garrys%20Mod" class="button" target="_blank">Купить</a>
+            </div>
+            <div class="card">
+                <h3>Игра Rust</h3>
+                <p>Игра для настоящих выживальщиков. Цена: 800 рублей.</p>
+                <a href="https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118505105584&sum=800&label=rust&quickpay-form=shop&targets=Оплата%20за%20игру%20Rust" class="button" target="_blank">Купить</a>
+            </div>
+            <div class="card">
+                <h3>Lies of P</h3>
+                <p>Захватывающее приключение. Цена: 1999 рублей.</p>
+                <a href="https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118505105584&sum=1999&label=liesofp&quickpay-form=shop&targets=Оплата%20за%20игру%20Lies%20of%20P" class="button" target="_blank">Купить</a>
+            </div>
+            <div class="card">
+                <h3>DayZ Deluxe Edition</h3>
+                <p>Выживайте в суровом мире зомби-апокалипсиса. Цена: 990 рублей.</p>
+                <a href="https://yoomoney.ru/quickpay/confirm.xml?receiver=4100118505105584&sum=990&label=dayzdeluxe&quickpay-form=shop&targets=Оплата%20за%20игру%20DayZ%20Deluxe%20Edition" class="button" target="_blank">Купить</a>
+            </div>
+        </div>
+        <div class="info-box">
+            <strong>Внимание:</strong> После успешной оплаты оставьте свою почту и Steam ID на странице подтверждения оплаты, чтобы получить подарок игрой.
+        </div>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Контакты</h2>
+        <p>Есть вопросы или нужна помощь? Напишите нам в Telegram!</p>
+        <a href="https://t.me/hatlinshop" class="contact-button">Написать в Telegram</a>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2025 HatlinShop. Все права защищены.</p>
+</footer>
+
+<!-- Скрипт для создания падающего снега -->
+<script>
+    const snowflakes = "❄️";
+
+    function createSnowflake() {
+        const snowflake = document.createElement("div");
+        snowflake.classList.add("snowflake");
+        snowflake.textContent = snowflakes;
+        snowflake.style.left = Math.random() * window.innerWidth + "px";
+        snowflake.style.animationDuration = Math.random() * 3 + 2 + "s"; // Разная скорость падения
+        snowflake.style.fontSize = Math.random() * 10 + 10 + "px"; // Разный размер
+        document.body.appendChild(snowflake);
+
+        // Удаление снежинки после окончания анимации
+        snowflake.addEventListener("animationend", () => {
+            snowflake.remove();
+        });
+    }
+
+    setInterval(createSnowflake, 200); // Генерация снежинок каждые 200 мс
+</script>
+
+</body>
+</html>
+
+
+
+
